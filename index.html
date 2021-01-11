@@ -3,46 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <meta name="description" content="Simple calculator">
+    <meta name="author" content="Johnner Gambacica">
+    <title>Calculator JAL</title>
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 600px)">
 </head>
 <body>
-
+  <main>
     <section class="calculator">
+      <h2>JAL</h2>
       <div class="screen" id="result-screen"></div>
       <div class="container" id="container">
-          <div class="button" id="rad">Rad</div>
-          <div class="button" id="deg">Deg</div>
-          <div class="button" id="left-parenthesis">(</div>
-          <div class="button" id="right-parenthesis">)</div>
-          <div class="button" id="delete">Delete</div>
-          <div class="button" id="ce">CE</div>
-          <div class="button" id="sin">Sin</div>
-          <div class="button" id="pi">Pi</div>
-          <div class="button" id="seven">7</div>
-          <div class="button" id="eight">8</div>
-          <div class="button" id="nine">9</div>
-          <div class="button" id="slash">/</div>
-          <div class="button" id="cos">Cos</div>
-          <div class="button" id="euler">e</div>
-          <div class="button" id="four">4</div>
-          <div class="button" id="five">5</div>
-          <div class="button" id="six">6</div>
-          <div class="button" id="x">*</div>
-          <div class="button" id="tan">Tan</div>
-          <div class="button" id="expo">^</div>
-          <div class="button" id="one">1</div>
-          <div class="button" id="two">2</div>
-          <div class="button" id="three">3</div>
-          <div class="button" id="dash">-</div>
-          <div class="button" id="inv">Inv</div>
-          <div class="button" id="sqrt">Sqrt</div>
-          <div class="button" id="zero">0</div>
-          <div class="button" id="dot">.</div>
-          <a href="#last"><div class="button" id="result">=</div></a>
-          <div class="button" id="plus">+</div>
-        </div>
+        <div class="button" id="rad">Rad</div>
+        <div class="button" id="deg">Deg</div>
+        <div class="button" id="left-parenthesis">(</div>
+        <div class="button" id="right-parenthesis">)</div>
+        <div class="button" id="sin">Sin</div>
+        <div class="button" id="cos">Cos</div>
+        <div class="button" id="tan">Tan</div>
+        <div class="button" id="delete">Delete</div>
+        <div class="button" id="one">1</div>
+        <div class="button" id="two">2</div>
+        <div class="button" id="three">3</div>
+        <div class="button" id="slash">/</div>
+        <div class="button" id="four">4</div>
+        <div class="button" id="five">5</div>
+        <div class="button" id="six">6</div>
+        <div class="button" id="x">*</div>
+        <div class="button" id="seven">7</div>
+        <div class="button" id="eight">8</div>
+        <div class="button" id="nine">9</div>
+        <div class="button" id="dash">-</div>
+        <div class="button" id="pi">Pi</div>
+        <div class="button" id="zero">0</div>
+        <div class="button" id="dot">.</div>
+        <div class="button" id="plus">+</div>
+        <div class="button" id="euler">e</div>
+        <div class="button" id="sqrt">Sqrt</div>
+        <div class="button" id="expo">^</div>
+        <div class="button" id="inv">Inv</div>
+        <div class="button" id="ce">CE</div>
+        <a href="#last" class="equal">
+          <div class="button" id="result">=</div>
+        </a>
+      </div>
     </section>
-    <script src="./javascript.js"></script>
+  </main>
+  <script src="./javascript.js"></script>
 </body>
 </html>
