@@ -1,6 +1,5 @@
 const container = document.getElementById("container");
 const screenResult = document.getElementById("result-screen");
-
 let operation = "";
 
 container.addEventListener("click", (event) => {
@@ -63,37 +62,48 @@ container.addEventListener("click", (event) => {
       break
     case "expo":
       operation += "**";
+      guide();
       break
     case "left-parenthesis":
       operation += "(";
+      guide();
       break
     case "right-parenthesis":
       operation += ")";
+      guide();
       break
     case "sqrt":
       operation += "Math.sqrt(";
+      guide();
       break
     case "pi":
       operation += "Math.PI";
+      guide();
       break
     case "dot":
       operation += ".";
+      guide();
       break
     case "sin":
-      operation += "Math.sin("
+      operation += "Math.sin(";
+      guide();
       break
     case "cos":
-      operation += "Math.cos("
+      operation += "Math.cos(";
+      guide();
       break
     case "tan":
-      operation += "Math.tan("
+      operation += "Math.tan(";
+      guide();
+      break
+    case "euler":
+      operation += Math.E;
+      guide();
       break
     case "delete":
       const tekst = operation.slice(0,operation.length-1);
       operation = tekst;
-      break
-    case "euler":
-      operation += Math.E;
+      guide();
       break
     case "ce":
       erase();
@@ -102,15 +112,14 @@ container.addEventListener("click", (event) => {
       result();
       break
   }
-  console.log(operation);
 });
 
 function result() {
   const answer = eval(operation);
-  console.log(answer);
-  screenResult.innerHTML += `<p>${answer}</p>`;
+  screenResult.innerHTML += `<p>${operation}</p>`;
   if (screenResult.lastChild.previousSibling){
     screenResult.lastChild.previousSibling.removeAttribute("id");
+    screenResult.lastChild.previousSibling.innerHTML = `${operation} = <span>${answer}</span>`;
   }
   screenResult.lastChild.setAttribute("id", "last");
 }
