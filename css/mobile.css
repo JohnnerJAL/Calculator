@@ -1,0 +1,38 @@
+.screen {
+  border: solid;
+  height: 100px;
+  overflow: scroll;
+  scroll-behavior: auto;
+}
+
+.container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 15%;
+  margin: 2px;;
+  padding: 10px;
+  border: solid;
+  text-align: center;
+  border-radius: 12px;
+  background-color: teal;
+}
+
+/**/
+#rad, #deg, #inv {
+  background-color: black;
+}
+/**/
+
+.screen p:last-child {
+  color: red;
+  border: solid black;
+  padding: 4px;
+}
+.screen > p {
+  color: blue;
+}

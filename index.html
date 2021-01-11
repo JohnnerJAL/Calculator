@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
 </head>
 <body>
     <!--
@@ -53,39 +53,40 @@
         </table>
     </section>-->
     <section class="calculator">
-        <div class="container">
-            <div class="button">Rad</div>
-            <div class="button">Deg</div>
-            <div class="button">(</div>
-            <div class="button">)</div>
-            <div class="button">Delete</div>
-            <div class="button">CE</div>
-            <div class="button">Sin</div>
-            <div class="button">Pi</div>
-            <div class="button">7</div>
-            <div class="button">8</div>
-            <div class="button">9</div>
-            <div class="button">/</div>
-            <div class="button">Cos</div>
-            <div class="button">e</div>
-            <div class="button">4</div>
-            <div class="button">5</div>
-            <div class="button">6</div>
-            <div class="button">x</div>
-            <div class="button">Tan</div>
-            <div class="button">^</div>
-            <div class="button">1</div>
-            <div class="button">2</div>
-            <div class="button">3</div>
-            <div class="button">-</div>
-            <div class="button">Inv</div>
-            <div class="button">Sqrt</div>
-            <div class="button">0</div>
-            <div class="button">.</div>
-            <div class="button">=</div>
-            <div class="button">+</div>
+      <div class="screen" id="result-screen"></div>
+        <div class="container" id="container">
+            <div class="button" id="rad">Rad</div>
+            <div class="button" id="deg">Deg</div>
+            <div class="button" id="left-parenthesis">(</div>
+            <div class="button" id="right-parenthesis">)</div>
+            <div class="button" id="delete">Delete</div>
+            <div class="button" id="ce">CE</div>
+            <div class="button" id="sin">Sin</div>
+            <div class="button" id="pi">Pi</div>
+            <div class="button" id="seven">7</div>
+            <div class="button" id="eight">8</div>
+            <div class="button" id="nine">9</div>
+            <div class="button" id="slash">/</div>
+            <div class="button" id="cos">Cos</div>
+            <div class="button" id="euler">e</div>
+            <div class="button" id="four">4</div>
+            <div class="button" id="five">5</div>
+            <div class="button" id="six">6</div>
+            <div class="button" id="x">x</div>
+            <div class="button" id="tan">Tan</div>
+            <div class="button" id="expo">^</div>
+            <div class="button" id="one">1</div>
+            <div class="button" id="two">2</div>
+            <div class="button" id="three">3</div>
+            <div class="button" id="dash">-</div>
+            <div class="button" id="inv">Inv</div>
+            <div class="button" id="sqrt">Sqrt</div>
+            <div class="button" id="zero">0</div>
+            <div class="button" id="dot">.</div>
+            <a href="#last"><div class="button" id="result">=</div></a>
+            <div class="button" id="plus">+</div>
         </div>
     </section>
-
+    <script src="./javascript.js"></script>
 </body>
 </html>
