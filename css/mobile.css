@@ -1,11 +1,16 @@
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 body {
   background-color: rgb(88, 102, 102);
 }
 section.calculator {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 10px;
 }
 section.calculator h2 {
@@ -15,7 +20,7 @@ section.calculator h2 {
   color: rgb(194, 190, 190);
 }
 .screen {
-  height: 180px;
+  flex-grow: 1;
   overflow: scroll;
   scroll-behavior: smooth;
   background-color: white;
@@ -47,7 +52,7 @@ section.calculator h2 {
 }
 .button {
   flex-grow: 1;
-  width: 15%;
+  width: 20%;
   margin: 5px;
   padding: 10px;
   background-color: teal;
